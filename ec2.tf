@@ -1,5 +1,5 @@
 resource "aws_instance" "myinstance" {
-  ami           = "ami-0700df939e7249d03"
-  instance_type = "t2.micro"
-  count         = 1
+  ami           = "var.ami_id"
+  instance_type = "var.instance_type"
+  count         = var.instance_count
 }
