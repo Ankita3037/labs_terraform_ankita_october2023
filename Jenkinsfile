@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage('Terraform Version') {
             steps {
-                echo 'Terraform Initialization is In Progress!'
+                echo 'Terraform version!'
                 sh 'terraform --version'
             }
         }
